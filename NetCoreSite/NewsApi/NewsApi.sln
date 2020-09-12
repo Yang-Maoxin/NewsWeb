@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsApi", "NewsApi.csproj", "{47535D2D-A37D-452B-BAB8-9DABB677F256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsApi.Dapper", "..\NewsApi.Dapper\NewsApi.Dapper.csproj", "{B72F412B-BBC5-49EB-B236-7F5FD370C61E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47535D2D-A37D-452B-BAB8-9DABB677F256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47535D2D-A37D-452B-BAB8-9DABB677F256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47535D2D-A37D-452B-BAB8-9DABB677F256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47535D2D-A37D-452B-BAB8-9DABB677F256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72F412B-BBC5-49EB-B236-7F5FD370C61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72F412B-BBC5-49EB-B236-7F5FD370C61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72F412B-BBC5-49EB-B236-7F5FD370C61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72F412B-BBC5-49EB-B236-7F5FD370C61E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C7FDC93-35ED-4729-B759-1A60B066B120}
+	EndGlobalSection
+EndGlobal
