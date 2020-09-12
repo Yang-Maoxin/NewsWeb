@@ -1,8 +1,0 @@
-E:\Study\VUE\NetCore\NewsApi.Dapper\bin\Debug\netstandard2.0\NewsApi.Dapper.deps.json
-E:\Study\VUE\NetCore\NewsApi.Dapper\bin\Debug\netstandard2.0\NewsApi.Dapper.dll
-E:\Study\VUE\NetCore\NewsApi.Dapper\obj\Debug\netstandard2.0\NewsApi.Dapper.csprojAssemblyReference.cache
-E:\Study\VUE\NetCore\NewsApi.Dapper\obj\Debug\netstandard2.0\NewsApi.Dapper.AssemblyInfoInputs.cache
-E:\Study\VUE\NetCore\NewsApi.Dapper\obj\Debug\netstandard2.0\NewsApi.Dapper.AssemblyInfo.cs
-E:\Study\VUE\NetCore\NewsApi.Dapper\bin\Debug\netstandard2.0\NewsApi.Dapper.pdb
-E:\Study\VUE\NetCore\NewsApi.Dapper\obj\Debug\netstandard2.0\NewsApi.Dapper.dll
-E:\Study\VUE\NetCore\NewsApi.Dapper\obj\Debug\netstandard2.0\NewsApi.Dapper.pdb
