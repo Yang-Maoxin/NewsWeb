@@ -6,5 +6,6 @@ namespace NewsApi.Dapper
 {
     public interface  IDependency
     {
+
     }
 }
