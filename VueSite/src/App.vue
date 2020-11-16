@@ -2,10 +2,6 @@
   <div id="app">
     <div style=" width:1080px;margin:0px auto;">
       <Home></Home>
-      <!-- <Banner :banners="banners" :duration="2000"></Banner>
-      <Channels @IdChange="handleChange" />
-      <NewsList :news=""></NewsList> -->
-      <!-- <Center><Loading/></Center> -->
     </div>
   </div>
 </template>
@@ -22,11 +18,6 @@ export default {
     return {
      
     };
-  },
-  methods: {
-    handleChange(newId) {
-      console.log("父组件输出 " + newId);
-    },
   },
 };
 </script>

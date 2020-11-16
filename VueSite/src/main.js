@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import{GetUsers} from  "./Services/newsService"
 
 // import{GetNewsChannels} from  "./Services/newsService"
 // //第一种调用方式

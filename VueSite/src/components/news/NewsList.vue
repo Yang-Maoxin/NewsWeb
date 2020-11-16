@@ -1,9 +1,10 @@
 <template>
   <div>
+    <Scroll target="news-item-normal" @scroll="handleScroll">
     <div class="news-item-normal" v-for="item in news" :key="item.id">
       <div class="image" v-if="item.havePic">
         <a :href="item.link" target="_blank">
-          <img :src="item.imageurls[0].url" />
+          <img :src="item.imgUrl"/>
         </a>
       </div>
       <div class="words">
@@ -22,17 +23,41 @@
           </div>
       </div>
     </div>
+    </Scroll>
   </div>
 </template>
 
 <script>
+import Scroll from "../news/Scroll";
 export default {
-  props: {
+   data: function() {
+    return {
+      params: {
+        pageIndex: 1,
+        pageSize: 10
+      },
+    };
+  },
+    components: {
+    Scroll,
+  },
+   props: {
     news: {
       type: Array,
       default: () => [],
     },
   },
+ methods:{
+  handleScroll(val) {
+      if (
+        val &&
+        val.isBottom 
+      ) {
+        this.params.pageIndex = this.params.pageIndex + 1;
+       this.$emit("IdChange", this.chooseId, this.params.pageIndex, this.params.pageSize);
+      }
+    },
+ },
 };
 </script>
 
@@ -50,7 +75,7 @@ export default {
   float: left;
   margin-right: 20px;
 }
-image img {
+.image img {
   width: 100%;
   height: 100%;
   object-fit: contain;

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using NewsApi.Common;
 using NewsApi.Dapper.Entities;
 using NewsApi.Dapper.IRepository;
 
 namespace NewsApi.Controllers
 {
     [Route("api/[controller]/[action]")]
+    //[ApiController]
     public class UsersController : Controller
     {
 

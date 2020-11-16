@@ -18,6 +18,8 @@ export default {
   components: {
     Banner,
     Channels,
+    Loading,
+    NewsList,
   },
   data() {
     return {
@@ -37,11 +39,14 @@ export default {
     };
   },
   methods: {
-    handleChange(channelId) {
-        this.isLoading=true
+    handleChange(channelId,pageIndex,pageSize) {
+      console.log("11111111111111111111111111111")
+      this.isLoading=true
       console.log("频道Id" & channelId);
-      GetNews(channelId, 1, 10).then((resp) => {
-        this.news = resp.contentlist;
+      GetNews(channelId, pageIndex, pageSize).then((resp) => {
+        console.log("开始打印新闻列表")
+        console.log(resp)
+        this.news = resp.data.data.dataSource;
         this.isLoading=false
       });
     },

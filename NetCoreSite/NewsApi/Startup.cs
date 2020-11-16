@@ -32,6 +32,19 @@ namespace NewsApi
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddCors(options =>
+            {
+                // Policy 名稱 CorsPolicy 是自訂的，可以自己改
+                options.AddPolicy("AllowSameDomain", policy =>
+                {
+                    // 設定允許跨域的來源，有多個的話可以用 `,` 隔開
+                    policy.WithOrigins(Configuration.GetSection("AllowCors").Get<List<string>>().ToArray())
+                    .AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowCredentials();
+                });
+            });
             #region 依赖注入
             var builder = new ContainerBuilder();//实例化容器
             //注册所有模块module
@@ -64,7 +77,7 @@ namespace NewsApi
             {
                 app.UseHsts();
             }
-
+            app.UseCors("AllowSameDomain");
             app.UseHttpsRedirection();
             app.UseMvc();
         }
